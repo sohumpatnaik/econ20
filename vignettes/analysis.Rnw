@@ -1,0 +1,29 @@
+%\VignetteIndexEntry{analysis}
+%\VignetteEngine{knitr::knitr}
+
+\documentclass{article}
+
+\begin{document}
+
+\title{My Article Title}
+\author{David Kane}
+
+\maketitle
+
+This is my first Sweave document.
+
+<<echo=FALSE, cache=TRUE, warning=FALSE, message=FALSE>>=
+
+library(saipan)
+
+x <- gather_data()
+@
+
+This is my first plot.
+
+<<echo = FALSE>>=
+p <- make_plot(x, ticker = "IBM")
+print(p)
+@
+
+\end{document}

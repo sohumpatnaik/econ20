@@ -1,0 +1,22 @@
+---
+title: "My Report Title"
+output: html_document
+---
+
+This is my first R Markdown document.
+
+```{r, echo=FALSE, cache=TRUE, warning=FALSE, message=FALSE}
+library(saipan)
+
+x <- gather_data()
+```
+
+
+This is my first plot.
+
+```{r, echo = FALSE}
+p <- make_plot(x, ticker = "IBM")
+print(p)
+```
+
+This is the end of my document.

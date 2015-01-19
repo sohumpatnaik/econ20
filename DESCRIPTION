@@ -1,0 +1,20 @@
+Package: saipan
+Type: Package
+Title: Example Package for Students to Fork From
+Version: 0.1.0
+Date: 2015-01-16
+Author: David Kane
+Maintainer: <ddk1@williams.edu>
+Description: This is a simple package, mostly developped in class. I am
+  placing it on github so that students have a starting point for their
+  own packages.
+License: GPL-3
+LazyData: TRUE
+VignetteBuilder: knitr
+Suggests:
+    knitr
+Depends:
+    dplyr,
+    ws.data,
+    lubridate,
+    ggplot2
