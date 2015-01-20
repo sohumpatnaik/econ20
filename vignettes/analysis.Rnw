@@ -16,7 +16,7 @@ This is my first Sweave document.
 
 library(saipan)
 
-x <- gather_data()
+x <- gather_data(tickers = c("MSFT", "IBM"))
 @
 
 This is my first plot.

@@ -4,7 +4,11 @@
 \alias{gather_data}
 \title{Gather data needed for project}
 \usage{
-gather_data()
+gather_data(tickers = NULL)
+}
+\arguments{
+\item{tickers}{character vector of tickers to gather. Default is NULL,
+  meaning use all companies.}
 }
 \value{
 A data frame of required data.

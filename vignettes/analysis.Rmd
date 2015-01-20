@@ -8,7 +8,7 @@ This is my first R Markdown document.
 ```{r, echo=FALSE, cache=TRUE, warning=FALSE, message=FALSE}
 library(saipan)
 
-x <- gather_data()
+x <- gather_data(tickers = c("MSFT", "IBM"))
 ```
 
 
